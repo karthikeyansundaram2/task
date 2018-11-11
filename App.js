@@ -11,7 +11,7 @@ class App extends Component {
     this.state = { 
      email_id: '',
     password:'',
-    accesstoken_user:'',
+
      };
   }
   
@@ -40,7 +40,7 @@ var querystring = require('querystring');
         console.log(res);
 
                
-         
+        accesstoken_user=res.data.accesstoken;
 
          console.log(accesstoken_user);
 
