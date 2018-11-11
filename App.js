@@ -64,14 +64,14 @@ var querystring = require('querystring');
           <form onSubmit={this.handleSubmit}>
           <label>
             Email_Id:
-            <input type="text" name="email_id"  onChange={this.handleChangeEmail} />
+            <input type="text" name="email_id"  onChange={this.handleChangeEmail} required />
 
           </label>
                 <br />
                 
            <label>
             password:
-            <input type="password" name="password"  onChange={this.handleChangepassword} />
+            <input type="password" name="password"  onChange={this.handleChangepassword}  required/>
           </label>
              <br />
            <button  type="submit"  >Login</button>
